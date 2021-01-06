@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "kobar blog",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "keywords": [
+    "kobar",
+    "blog"
+  ],
+  "author": "safeydev@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  }
+}

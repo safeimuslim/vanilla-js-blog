@@ -1,0 +1,182 @@
+body {
+  font-family: sans-serif, Helvetica, Arial, Verdana;
+  margin: auto;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: grey;
+}
+
+.title {
+  font-size: 27px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #292929;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  letter-spacing: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #292929;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+p {
+  font-size: 18px;
+  color: #292929;
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li:hover {
+  cursor: pointer;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.p-20-0 {
+  margin: 20px 0;
+}
+
+header {
+  height: 100px;
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+header ul {
+  justify-self: left;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+header ul li {
+  padding-right: 10px;
+}
+header ul li a {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+header ul li a:hover {
+  color: #292929;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 50px auto 0px auto;
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.popular {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.popular li {
+  /* padding: 10px; */
+}
+
+.popular li img {
+  width: 100%;
+}
+
+.popular li img:hover {
+  opacity: 0.8;
+}
+
+.popular h1 {
+  font-size: 24px;
+}
+
+.content {
+  /* display: grid;
+  grid-template-columns: auto auto;
+  list-style-type: none;
+  margin-bottom: 10px;
+  justify-items: start; */
+}
+
+.content .list li {
+  display: grid;
+  grid-template-columns: 150px auto;
+  list-style-type: none;
+  margin-bottom: 10px;
+  justify-items: start;
+}
+
+.list img {
+  width: 150px;
+  height: 150px;
+}
+
+.list li img:hover {
+  opacity: 0.8;
+}
+
+.list .description {
+  padding-left: 20px;
+}
+
+.list .description p {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.date {
+  padding-top: 10px;
+  font-size: 12px;
+  font-weight: 200;
+  color: #757575;
+}
