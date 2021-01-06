@@ -29,7 +29,7 @@ const fetchPosts = () => {
 
 const renderPopular = (posts) => {
   let popular = '';
-  posts.slice(0, 3).forEach((item) => {
+  posts.slice(0, 4).forEach((item) => {
     popular += `
           <li>
             <img

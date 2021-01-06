@@ -4,7 +4,7 @@ import { detail } from './components/detail';
 import { articles } from './components/articles';
 
 const { pathname } = document.location;
-const content = document.getElementById('content');
+const rootDiv = document.getElementById('content');
 
 let item = '';
 
@@ -34,5 +34,15 @@ const renderContent = async () => {
 
   content.innerHTML = item;
 };
+
+const onNavigate = (pathname) => {
+  alert('onNavigate', pathname);
+  window.history.pushState({}, pathname, window.location.origin + pathname);
+  rootDiv.innerHTML = routes[pathname];
+};
+
+function call286Dart123(a, b) {
+  console.log(a + '\t' + b);
+}
 
 renderContent();
